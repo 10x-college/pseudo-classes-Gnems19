@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="top-bar__left">
+          <span class="brand">POS</span>
+          <label class="search-field">
+            <span class="search-field__icon" aria-hidden="true">🔍</span>
+            <input
+              class="search-field__input"
+              type="text"
+              placeholder="Search product or any order..."
+              aria-label="Search"
+            />
+          </label>
+        </div>
+        <div class="top-bar__right">
+          <div class="date-time">
+            <span class="date-time__icon" aria-hidden="true">📅</span>
+            <span class="date-time__text">October 18th 2002, 10:00AM</span>
+          </div>
+          <button class="action-button" type="button">
+            <span class="action-button__icon" aria-hidden="true">＋</span>
+            Add Table
+          </button>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="menu" aria-label="Food menu">
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/16-bonbon.png"
+                alt="16 Bonbon"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">16 Bonbon</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--nut">N</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/8-bonbon.png"
+                alt="8 Bonbon"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">8 Bonbon</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/8-heart-bonbon.jpg"
+                alt="8 Heart Bonbon"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">8 Heart Bonbon</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--nut">N</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/black-chocolate.png"
+                alt="Black Chocolate"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Black Chocolate</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--free">0$</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/chocolatevariations_almond.png"
+                alt="Chocolate + Almond"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Chocolate + Almond</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/chocolatevariations_cashew.png"
+                alt="Chocolate + Cashew"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Chocolate + Cashew</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/chocolatevariations_cranberry.png"
+                alt="Chocolate + Cranberry"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Chocolate + Cranberry</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/chocolatevariations_peanut.png"
+                alt="Chocolate + Peanut"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Chocolate + Peanut</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://assets.chocola.ge/menu/chocolatevariations_pistachio.png"
+                alt="Chocolate + Pistachio"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Chocolate + Pistachio</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
+                alt="Classic burger"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Classic Burger</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--nut">N</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80"
+                alt="Cheeseburger"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Cheeseburger</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+
+          <article class="food-card">
+            <div class="food-card__image">
+              <img
+                class="food-card__img"
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                alt="Double burger"
+              />
+              <div class="food-card__overlay">
+                <span class="food-card__check">✓</span>
+              </div>
+            </div>
+            <div class="food-card__info">
+              <h3 class="food-card__title">Double Burger</h3>
+              <div class="food-card__meta">
+                <span class="food-card__label">Category:</span>
+                <div class="food-card__badges">
+                  <span class="badge badge--gluten">G</span>
+                  <span class="badge badge--chili">🌶</span>
+                  <span class="badge badge--chili">🌶</span>
+                </div>
+              </div>
+            </div>
+            <button class="food-card__add" type="button">Add</button>
+          </article>
+        </section>
+      </main>
+
+      <footer class="menu-footer">
+        <button class="menu-footer__tab menu-footer__tab--active" type="button">
+          Starter
+        </button>
+        <button class="menu-footer__tab" type="button">Main Course</button>
+        <button class="menu-footer__tab" type="button">Drinks</button>
+        <button class="menu-footer__tab" type="button">Desserts</button>
+      </footer>
+    </div>
+  </body>
+</html>
